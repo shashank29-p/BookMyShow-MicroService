@@ -1,0 +1,16 @@
+package com.example.booking.model;
+
+import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class BookingCreatedEvent {
+  private String bookingId;
+  private String showId;
+  private List<String> seatIds;
+  private Double amount;
+}
